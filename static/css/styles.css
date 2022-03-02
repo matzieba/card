@@ -7,6 +7,7 @@ body {
 h1{
     font-family:"lato";
     font-weight: 400;
+    margin-top:2rem;
 
 }
 
@@ -14,8 +15,13 @@ h1 p{
     font-family:"lato";
     font-weight: 100;
     color:white;
+
 }
 
+.container-fluid {
+    padding:1%
+
+}
 
 /*Navbar*/
 .navbar {
@@ -36,5 +42,13 @@ h1 p{
 }
 .nav-item {
   padding: 0 10px;
+  }
+
+/*title*/
+
+.profil-picture {
+    width:40%;
+
+}
 
 

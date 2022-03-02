@@ -1,35 +1,43 @@
 body {
     background-color: #5D8BF4;
     text-align:center;
+    font-family:"lato";
 
 }
 
 h1{
-    font-family:"lato";
     font-weight: 400;
     margin-top:2rem;
+    text-align:left;
+    margin-top:0;
+    margin-left:2rem;
 
 }
 
-h1 p{
-    font-family:"lato";
+h1 span{
     font-weight: 100;
     color:white;
-
 }
 
 .container-fluid {
-    padding:1%
+    padding:1%;
+    margin-bottom:15%;
 
 }
+
+#title > div > div > div:nth-child(1) > p {
+    text-align:left;
+    padding:1%;
+    margin-left:2rem;
+
+}
+
 
 /*Navbar*/
-.navbar {
-  padding: 0 0 4.5rem;
-}
+
 
 .navbar-brand {
-  font-family: "lato";
+
   font-size: 2.5rem;
   display: inline-block;
 
@@ -37,7 +45,7 @@ h1 p{
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Lato";
+
 
 }
 .nav-item {
@@ -47,8 +55,26 @@ h1 p{
 /*title*/
 
 .profil-picture {
-    width:40%;
+    width:50%;
+}
+
+/*white section*/
+
+.white-section {
+    background-color: #fff;
+
 
 }
+
+.about_me_img {
+    width:25%;
+
+}
+
+.about_me_img:hover  {
+    width:26%;
+    }
+
+
 
 

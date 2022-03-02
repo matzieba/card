@@ -1,16 +1,40 @@
 body {
-    background-color: #5D8BF4
+    background-color: #5D8BF4;
+    text-align:center;
+
 }
 
-
-
 h1{
-    font-family:lato;
+    font-family:"lato";
     font-weight: 400;
 
 }
 
 h1 p{
-    font-family:lato;
+    font-family:"lato";
     font-weight: 100;
+    color:white;
 }
+
+
+/*Navbar*/
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "lato";
+  font-size: 2.5rem;
+  display: inline-block;
+
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Lato";
+
+}
+.nav-item {
+  padding: 0 10px;
+
+

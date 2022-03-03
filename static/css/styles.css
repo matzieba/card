@@ -95,18 +95,31 @@ h1 span{
 }
 
 #manager {
-    padding-bottom:5%;
+    padding-bottom:35%;
     margin-top:5%;
     text-align:left;
     margin-left:5%;
 }
 #developer {
+    padding-bottom:35%;
     margin-top:5%;
     text-align:left;
     margin-left:5%;
 }
 
+#form{
+    margin-left:30%;
+    margin-top:5%;
+    margin-right:30%;
+}
+
+
 /*footer*/
+
+a {
+    color:black;
+}
+
 
 
 

@@ -2,10 +2,10 @@ from flask import Flask, render_template, redirect,url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Email
-from flask_ckeditor import CKEditorField
+from flask_ckeditor import CKEditorField, CKEditor
 import os
 from flask_bootstrap import Bootstrap
-from flask_ckeditor import CKEditor
+
 import smtplib
 
 SECRET_KEY = os.urandom(32)
@@ -20,7 +20,7 @@ class ContactForm(FlaskForm):
     title = StringField("Message topic", validators=[DataRequired()])
     email = StringField("Your email", validators=[DataRequired(), Email()])
     body = CKEditorField("Your message", validators=[DataRequired()])
-    submit = SubmitField("Sent")
+    submit = SubmitField("Send")
 
 SECRET_KEY = "76736jfmsdkgsadmk53953uasfa@#$%%"
 
@@ -38,6 +38,11 @@ def manager():
 def developer():
     is_main = False
     return render_template('developer.html', is_main=is_main)
+
+@app.route("/dog")
+def dog():
+    is_main = False
+    return render_template('dog.html', is_main=is_main)
 
 @app.route("/contact", methods = ['GET', 'POST'])
 def contact():

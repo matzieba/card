@@ -16,6 +16,11 @@ h1 span{
     font-weight: 100;
     color:white;
 }
+body > section.greeting > div > div:nth-child(1) > p > span{
+    font-weight: 400;
+    color:white;
+}
+
 
 .container-fluid {
     padding:1%;
@@ -85,34 +90,86 @@ h1 span{
 /*menager-dev*/
 
 .manager-picture {
-    width:10%;
-    padding-bottom:2%;
+    width:15%;
+    padding-bottom:6%;
+    margin-left:30%;
 
+}
+#manager {
+    padding-bottom:35%;
+    margin-top:20%;
+    text-align:left;
+    margin-left:5%;
+}
+
+#manager h2 span {
+    color:white;
+}
+#manager p span {
+    color:white;
+}
+
+#manager p {
+    text-indent: 6%;
 }
 
 .dev-picture {
-    width:10%;
+    width:25%;
+    margin-left:30%;
 }
 
-#manager {
-    padding-bottom:35%;
-    margin-top:5%;
-    text-align:left;
-    margin-left:5%;
-}
 #developer {
     padding-bottom:35%;
-    margin-top:5%;
+    margin-top:20%;
     text-align:left;
     margin-left:5%;
 }
+#developer h2 {
+    padding-bottom:5%;
+}
+#developer p {
+    text-indent: 6%;
+}
+
+#developer h2 span {
+    color:white;
+}
+#developer p span {
+    color:white;
+}
+
+/*dog*/
+#dog {
+    padding-bottom:35%;
+    margin-top:20%;
+    text-align:left;
+    margin-left:5%;
+}
+#dog h2 {
+    padding-bottom:5%;
+}
+#dog p {
+    text-indent: 6%;
+}
+
+#dog h2 span {
+    color:white;
+}
+#dog p span {
+    color:white;
+}
+.dog-picture {
+    width:35%;
+    margin-left:30%;
+
+
+/*contact form*/
 
 #form{
     margin-left:30%;
     margin-top:5%;
     margin-right:30%;
 }
-
 
 /*footer*/
 

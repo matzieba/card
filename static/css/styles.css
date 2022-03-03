@@ -21,7 +21,6 @@ h1 span{
 
 .container-fluid {
     padding:1%;
-    margin-bottom:15%;
 
 }
 
@@ -29,18 +28,13 @@ h1 span{
     text-align:left;
     padding:1%;
     margin-left:2rem;
-
 }
 
 
 /*Navbar*/
-
-
 .navbar-brand {
-
   font-size: 2.5rem;
   display: inline-block;
-
 }
 
 .nav-link {
@@ -57,23 +51,56 @@ h1 span{
 .profil-picture {
     width:50%;
 }
+.greeting {
+    margin-top:5%;
+
+}
+
+
 
 /*white section*/
 
 .white-section {
-    background-color: #fff;
-
-
+    background-color: #DFF6FF;
+    margin-top:5%;
+    margin-bottom:33%;
 }
 
 .about_me_img {
     width:25%;
-
 }
 
 .about_me_img:hover  {
     width:26%;
     }
+
+.hire_me_img {
+    width:15%;
+}
+
+.hire_me_img:hover {
+    width:17%;
+}
+
+/*menager-dev*/
+
+.manager-picture {
+    width:10%;
+    padding-bottom:2%;
+}
+
+.dev-picture {
+    width:10%;
+}
+
+#manager {
+    padding-bottom:5%;
+    margin-top:5%;
+}
+
+/*footer*/
+
+
 
 
 

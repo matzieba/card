@@ -2,7 +2,7 @@ from flask import Flask, render_template, redirect,url_for
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Email
-from flask_ckeditor import CKEditorField, CKEditor
+
 import os
 from flask_bootstrap import Bootstrap
 
@@ -13,13 +13,13 @@ SECRET_KEY = os.urandom(32)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 bootstrap = Bootstrap(app)
-ckeditor = CKEditor(app)
+
 
 
 class ContactForm(FlaskForm):
     title = StringField("Message topic", validators=[DataRequired()])
     email = StringField("Your email", validators=[DataRequired(), Email()])
-    body = CKEditorField("Your message", validators=[DataRequired()])
+    body = StringField("Your message", validators=[DataRequired()])
     submit = SubmitField("Send")
 
 SECRET_KEY = "76736jfmsdkgsadmk53953uasfa@#$%%"
@@ -43,6 +43,11 @@ def developer():
 def dog():
     is_main = False
     return render_template('dog.html', is_main=is_main)
+
+@app.route("/climber")
+def climber():
+    is_main = False
+    return render_template('climber.html', is_main=is_main)
 
 @app.route("/contact", methods = ['GET', 'POST'])
 def contact():

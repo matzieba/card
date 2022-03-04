@@ -24,10 +24,18 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 
 .container-fluid {
     padding:1%;
-
 }
 
 /*Navbar*/
+
+#navbarNav{
+    text-align:right;
+
+}
+
+.nav{
+    padding-bottom:20%;
+}
 .navbar-brand {
   font-size: 2.5rem;
   display: inline-block;
@@ -35,22 +43,27 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 
 .nav-link {
   font-size: 1.2rem;
-
-
 }
 .nav-item {
   padding: 0 10px;
-  }
+}
+
+#navbarNav > ul > li:nth-child(1) > a{
+    color:black;
+}
+#navbarNav > ul > li:nth-child(2) > a{
+    color:black;
+}
+#navbarNav > ul > li:nth-child(3) > a{
+    color:black;
+}
 
 /*title*/
 
 .profil-picture {
     width:50%;
-
-
 }
 .greeting {
-    margin-top:10%;
     margin-left:5%;
 }
 
@@ -60,8 +73,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 .greeting p {
     text-align:left;
 }
-
-
 
 /*white section*/
 
@@ -90,26 +101,26 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 /*menager-dev*/
 
 .manager-picture {
-    width:15%;
+    width:20%;
     padding-bottom:6%;
     margin-left:30%;
 
 }
-#manager {
-    padding-bottom:35%;
-    margin-top:20%;
+.manager {
     text-align:left;
     margin-left:5%;
+    margin-bottom:5%;
+    padding-top:2%;
 }
 
-#manager h2 span {
-    color:white;
+.manager h2 span {
+    color:#2D31FA;
 }
-#manager p span {
-    color:white;
+.manager p span {
+    color:#2D31FA;
 }
 
-#manager p {
+.manager p {
     text-indent: 6%;
 }
 
@@ -119,10 +130,9 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 
 #developer {
-    padding-bottom:35%;
-    margin-top:20%;
     text-align:left;
     margin-left:5%;
+    padding-top:1%;
 }
 #developer h2 {
     padding-bottom:5%;
@@ -132,18 +142,22 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 
 #developer h2 span {
-    color:white;
+    color:#2D31FA
 }
 #developer p span {
-    color:white;
+    color:#2D31FA;
+    }
+
+.background {
+    background-color:#DFF6FF;
 }
 
 /*dog*/
 #dog {
-    padding-bottom:35%;
-    margin-top:20%;
     text-align:left;
     margin-left:5%;
+    padding-top:1%;
+    padding-bottom:1%;
 }
 #dog h2 {
     padding-bottom:5%;
@@ -153,21 +167,18 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 
 #dog h2 span {
-    color:white;
+    color:#2D31FA;
 }
-#dog p span {
-    color:white;
-}
+
 .dog-picture {
     width:35%;
     margin-left:30%;
-
+}
 
 /*contact form*/
 
 #form{
     margin-left:30%;
-    margin-top:5%;
     margin-right:30%;
 }
 
@@ -175,6 +186,11 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 
 a {
     color:black;
+}
+
+#footer{
+    margin-top:30%;
+
 }
 
 

@@ -2,7 +2,7 @@ body {
     background-color: #5D8BF4;
     text-align:center;
     font-family:"lato";
-
+    font-size: xx-large;
 }
 
 h1{
@@ -37,7 +37,7 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     padding-bottom:20%;
 }
 .navbar-brand {
-  font-size: 2.5rem;
+  font-size: xx-large;
   display: inline-block;
 }
 

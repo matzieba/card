@@ -69,6 +69,7 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 
 .profil-picture {
     width:40%;
+    padding-top:7%;
 }
 .greeting {
     margin-left:5%;
@@ -191,6 +192,7 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 #form{
     margin-left:30%;
     margin-right:30%;
+
 }
 
 /*footer*/

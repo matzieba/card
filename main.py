@@ -50,21 +50,21 @@ def climber():
 @app.route("/contact", methods = ['GET', 'POST'])
 def contact():
     form = ContactForm()
-    if form.validate_on_submit():
-        message = {
-            "title":form.title.data,
-            "email":form.email.data,
-            "message":form.body.data,
-        }
-        my_email = "xxx"
-        password = "xxx"
-        with smtplib.SMTP("smtp.gmail.com", 587) as connection:
-            connection.starttls()
-            connection.login(user=my_email, password=password)
-            connection.sendmail(from_addr=my_email,
-                                to_addrs="matizieba@gmail.com",
-                                msg=message['message'],)
-            return redirect(url_for('main'))
+    # if form.validate_on_submit():
+    #     message = {
+    #         "title":form.title.data,
+    #         "email":form.email.data,
+    #         "message":form.body.data,
+    #     }
+    #     my_email = "xxx"
+    #     password = "xxx"
+    #     with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+    #         connection.starttls()
+    #         connection.login(user=my_email, password=password)
+    #         connection.sendmail(from_addr=my_email,
+    #                             to_addrs="matizieba@gmail.com",
+    #                             msg=message['message'],)
+    #         return redirect(url_for('main'))
     is_main = False
     return render_template('contact.html', form=form)
 

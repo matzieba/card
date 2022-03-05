@@ -56,8 +56,8 @@ def contact():
             "email":form.email.data,
             "message":form.body.data,
         }
-        my_email = "xxx"
-        password = "xxx"
+        my_email = os.environ.get("my_email")
+        password = os.environ.get("password")
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
             connection.starttls()
             connection.login(user=my_email, password=password)

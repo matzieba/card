@@ -6,10 +6,10 @@ import os
 from flask_bootstrap import Bootstrap
 import smtplib
 
-SECRET_KEY = os.urandom(32)
+
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = SECRET_KEY
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY'")
 bootstrap = Bootstrap(app)
 
 
@@ -70,5 +70,5 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 

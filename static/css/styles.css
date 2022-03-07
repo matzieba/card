@@ -99,19 +99,19 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     }
 
 .hire_me_img {
-    width:25%;
+    width:20%;
 }
 
 .hire_me_img:hover {
-    width:26%;
+    width:21%;
 }
 
 .hire_me_button {
-    width:30%;
+    width:15%;
 }
 
 .hire_me_button {
-    width:31%;
+    width:16%;
 }
 
 #hire-button{

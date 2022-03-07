@@ -63,7 +63,7 @@ def contact():
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email,
                                 to_addrs="matizieba@gmail.com",
-                                msg=message['message'],)
+                                msg=f"Subject:{message['title']}\n\n{message['message']} from:{message['email']}",)
             return redirect(url_for('main'))
     is_main = False
     return render_template('contact.html', form=form)

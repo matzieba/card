@@ -5,11 +5,13 @@ from wtforms.validators import DataRequired, Email
 import os
 from flask_bootstrap import Bootstrap
 import smtplib
+from flask_ckeditor import CKEditor, CKEditorField
 
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+ckeditor = CKEditor(app)
 bootstrap = Bootstrap(app)
 
 
@@ -17,7 +19,7 @@ bootstrap = Bootstrap(app)
 class ContactForm(FlaskForm):
     title = StringField("Message topic", validators=[DataRequired()])
     email = StringField("Your email", validators=[DataRequired(), Email()])
-    body = StringField("Your message", validators=[DataRequired()])
+    body = CKEditorField("Your message", validators=[DataRequired()])
     submit = SubmitField("Send")
 
 SECRET_KEY = "76736jfmsdkgsadmk53953uasfa@#$%%"

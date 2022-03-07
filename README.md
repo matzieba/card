@@ -1,2 +1,2 @@
 # card
-simple visitcard website build in with Flask
+simple visitcard website build with Flask

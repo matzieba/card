@@ -123,13 +123,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     padding-top:2%;
 }
 
-.manager h2 span {
-    color:#2D31FA;
-}
-.manager p span {
-    color:#2D31FA;
-}
-
 .manager p {
     text-indent: 6%;
 }
@@ -152,13 +145,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     text-indent: 6%;
 }
 
-#developer h2 span {
-    color:#2D31FA
-}
-#developer p span {
-    color:#2D31FA;
-    }
-
 .background {
     background-color:#DFF6FF;
 }
@@ -176,10 +162,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 #dog p {
     text-indent: 6%;
-}
-
-#dog h2 span {
-    color:#2D31FA;
 }
 
 .dog-picture {

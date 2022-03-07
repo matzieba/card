@@ -35,7 +35,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 #navbarNav{
     text-align:right;
     font-size: xx-large;
-
 }
 
 .nav{
@@ -106,6 +105,11 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 .hire_me_img:hover {
     width:17%;
 }
+
+#hire-button{
+    font-size: x-large;
+}
+
 
 /*menager-dev*/
 
@@ -185,7 +189,6 @@ a {
 
 #footer{
     margin-top:30%;
-
 }
 
 

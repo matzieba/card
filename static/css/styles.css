@@ -107,11 +107,11 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 
 .hire_me_button {
-    width:14%;
+    width:17%;
 }
 
 .hire_me_button:hover {
-    width:15%;
+    width:18%;
 }
 
 #hire-button{

@@ -5,11 +5,13 @@ from wtforms.validators import DataRequired, Email
 import os
 from flask_bootstrap import Bootstrap
 import smtplib
+from flask_ckeditor import CKEditor, CKEditorField
 
 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
+ckeditor = CKEditor(app)
 bootstrap = Bootstrap(app)
 
 
@@ -17,7 +19,7 @@ bootstrap = Bootstrap(app)
 class ContactForm(FlaskForm):
     title = StringField("Message topic", validators=[DataRequired()])
     email = StringField("Your email", validators=[DataRequired(), Email()])
-    body = StringField("Your message", validators=[DataRequired()])
+    body = CKEditorField("Your message", validators=[DataRequired()])
     submit = SubmitField("Send")
 
 SECRET_KEY = "76736jfmsdkgsadmk53953uasfa@#$%%"
@@ -52,9 +54,9 @@ def contact():
     form = ContactForm()
     if form.validate_on_submit():
         message = {
-            "title":form.title.data,
+            "title":form.title.data.encode('utf-8'),
             "email":form.email.data,
-            "message":form.body.data,
+            "message":form.body.data.encode('utf-8'),
         }
         my_email = os.environ.get("my_email")
         password = os.environ.get("password")
@@ -63,7 +65,7 @@ def contact():
             connection.login(user=my_email, password=password)
             connection.sendmail(from_addr=my_email,
                                 to_addrs="matizieba@gmail.com",
-                                msg=message['message'],)
+                                msg=f"Subject:{message['title']}\n\n{message['message']} from: {message['email']}",)
             return redirect(url_for('main'))
     is_main = False
     return render_template('contact.html', form=form)

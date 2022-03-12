@@ -35,7 +35,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 #navbarNav{
     text-align:right;
     font-size: xx-large;
-
 }
 
 .nav{
@@ -69,7 +68,7 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 
 .profil-picture {
     width:40%;
-    padding-top:7%;
+    padding-top:5%;
 }
 .greeting {
     margin-left:5%;
@@ -100,12 +99,25 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     }
 
 .hire_me_img {
-    width:15%;
+    width:17%;
 }
 
 .hire_me_img:hover {
+    width:18%;
+}
+
+.hire_me_button {
     width:17%;
 }
+
+.hire_me_button:hover {
+    width:18%;
+}
+
+#hire-button{
+    font-size: x-large;
+}
+
 
 /*menager-dev*/
 
@@ -121,13 +133,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     margin-bottom:5%;
     margin-right:5%;
     padding-top:2%;
-}
-
-.manager h2 span {
-    color:#2D31FA;
-}
-.manager p span {
-    color:#2D31FA;
 }
 
 .manager p {
@@ -152,13 +157,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     text-indent: 6%;
 }
 
-#developer h2 span {
-    color:#2D31FA
-}
-#developer p span {
-    color:#2D31FA;
-    }
-
 .background {
     background-color:#DFF6FF;
 }
@@ -176,10 +174,6 @@ body > section.greeting > div > div:nth-child(1) > p > span{
 }
 #dog p {
     text-indent: 6%;
-}
-
-#dog h2 span {
-    color:#2D31FA;
 }
 
 .dog-picture {
@@ -203,7 +197,6 @@ a {
 
 #footer{
     margin-top:30%;
-
 }
 
 

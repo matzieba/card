@@ -22,8 +22,6 @@ class ContactForm(FlaskForm):
     body = CKEditorField("Your message", validators=[DataRequired()])
     submit = SubmitField("Send")
 
-SECRET_KEY = "76736jfmsdkgsadmk53953uasfa@#$%%"
-
 @app.route("/")
 def main():
     is_main = True
@@ -72,5 +70,5 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
 

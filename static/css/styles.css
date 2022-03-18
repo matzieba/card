@@ -47,6 +47,8 @@ body > section.greeting > div > div:nth-child(1) > p > span{
     padding-bottom:20%;
 
 }
+
+
 .navbar-brand {
   font-size: xx-large;
   display: inline-block;

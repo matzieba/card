@@ -10,6 +10,7 @@ from flask_ckeditor import CKEditor, CKEditorField
 
 
 app = Flask(__name__)
+#
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
 bootstrap = Bootstrap(app)
